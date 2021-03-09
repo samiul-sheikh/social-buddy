@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
+import PostDetail from './Components/PostDetail/PostDetail';
 import {
     BrowserRouter as Router,
     Switch,
@@ -34,6 +35,9 @@ function App() {
                         </Route>
                         <Route path="/about">
                             <About />
+                        </Route>
+                        <Route path="/post/:id">
+                            <PostDetail></PostDetail>
                         </Route>
                     </Switch>
                 </div>
